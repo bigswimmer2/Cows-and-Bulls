@@ -36,9 +36,8 @@ def playagain():
 
 print("Welcome to the Cows and Bulls Game!")
 i = 0
-exit = False
 correctanswer = False
-while i == 0 & exit == False:
+while i == 0:
     print("Enter a number Between 1000 and 9999:")
     number = randomnumber()
     gotright = False
@@ -56,4 +55,5 @@ while i == 0 & exit == False:
     if correctanswer == True:
         playag = playagain()
         if playag == False:
-            exit = True
+            print("Goodbye!")
+            break
