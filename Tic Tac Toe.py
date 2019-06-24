@@ -7,6 +7,7 @@ game_running = True
 player = 1
 running = True
 correct = False
+turn_count = 0
 
 
 def print_board():
