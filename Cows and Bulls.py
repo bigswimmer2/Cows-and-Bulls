@@ -55,5 +55,5 @@ while i == 0:
     if correctanswer == True:
         playag = playagain()
         if playag == False:
-            print("Goodbye!")
+            print("\nGoodbye!")
             break

@@ -11,7 +11,7 @@ while i == 0:
     print(password)
     j = 0
     while(j ==0):
-        want = input("Do you this password? ")
+        want = input("Do you this password? (yes or no) ")
         want.lower()
         if want == "yes":
             print("Your Password is " + password)
@@ -19,7 +19,7 @@ while i == 0:
         elif want == "no":
             break
     if want == "yes":
-        fin = input("Do you want a new password or no? ")
+        fin = input("Do you want a new password. yes or no? ")
         fin.lower()
         while j == 0:
             if fin == "yes":
