@@ -2,13 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import tkinter
 
+array =[]
 url = 'http://www.nytimes.com'
 r = requests.get(url)
 r_html = r.text
 soup = BeautifulSoup(r_html, 'html.parser')
-print(soup.find_all(class_='article'))
 
-root = tkinter.Tk()
+for f in soup.find_all('h2'):
+    array.append(str(f))
 
-root.mainloop()
-
+for f in array:
+    print(f + '\n')
